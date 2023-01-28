@@ -1,0 +1,251 @@
+@font-face {
+	font-family:'Rubik';
+	src:local('Rubik Regular'),
+		url('fonts/Rubik-Regular.woff2') format('woff2'),
+		url('fonts/Rubik-Regular.woff') format('woff');
+	font-display: swap;
+}
+@font-face {
+	font-family:'Rubik';
+	src:local('Rubik Bold'),
+		url('fonts/Rubik-Bold.woff2') format('woff2'),
+		url('fonts/Rubik-Bold.woff') format('woff');
+	font-display: swap;
+	font-weight: bold;
+}
+@font-face {
+	font-family:'Rubik';
+	src:local('Rubik Italic'),
+		url('fonts/Rubik-Italic.woff2') format('woff2'),
+		url('fonts/Rubik-Italic.woff') format('woff');
+	font-display: swap;
+	font-style: italic;
+}
+@media screen {
+	.header *::selection, .footer *::selection { background-color: #ffffff; color: #333333; }
+	.main *::selection { background-color: #333333; color: #ffffff; }
+	.hide { height: 1px; left: -1000px; overflow: hidden; position: absolute; top: -1px; width: 1px; }
+	.t_show:target { height: auto; left: auto; overflow: auto; position: static; top: auto; width: auto; }
+	.footer {
+		align-items: flex-end;
+		grid-area: footer;
+		justify-content: flex-end; }
+	.footer, .header {
+		background-color: #000000;
+		text-align: center; }
+	.body {
+		background-color: #ffffff;
+		display: grid;
+		grid-template-areas: "header main" "footer main";
+		grid-template-columns: 1fr 1fr;
+		margin: 0 auto;
+		overflow-y: hidden; }
+	.toc:last-child {
+		border-bottom-width: 0.1em; }
+	.toc {
+		border-color: #d1d0d0;
+		border-width: 0.05em 0;
+		counter-increment: li;
+		font-size: 1.1em;
+		list-style-position: inside;
+		padding: 1em 0;
+		padding-left: 0.5em; }
+	.download, .ebook {
+		border-color: #ffffff;
+		border-width: 0.2em; }
+	.download, .ebook, .toc {
+		border-style: solid; }
+	.toc:first-child {
+		border-top-width: 0.1em; }
+	.toc::before {
+		color: #bfbebe;
+		content: counter(li) ".";
+		display: inline-block;
+		width: 2em; }
+	.heading:after, .heading:before {
+		color: #d1d0d0;
+		font-size: 0.5em;
+		position: relative; }
+	.build a, .footer, .header, .footer a, .header a {
+		color: #ffffff; }
+	.copyright:before {
+		content: "\00a9";
+		padding-right: 0.2em; }
+	.copyright:hover span:before {
+		content: "2010 - "; }
+	.heading:before {
+		content: "The ";
+		left: 2.1em;
+		top: -2em; }
+	.heading:after {
+		content: " Book";
+		left: -2.8em;
+		top: 1.5em; }
+	.main ol {
+		counter-reset: li;
+		padding: 0 2em; }
+	.copyright:before, .copyright:hover span {
+		cursor: text; }
+	.download {
+		display: block;
+		text-decoration: none;
+		width: 12em; }
+	.build, .copyright, .footer {
+		display: flex; }
+	.build, .copyright {
+		flex-basis: 50%; }
+	.build, .copy, .copyright, .download, .error-head, .error-sub, .error-txt, .heading, .subheading, .subtitle, .toc {
+		font-family: Rubik, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+	.error-head {
+		font-size: 4em;
+		margin-bottom: 0; }
+	.error-sub {
+		font-size: 1.5em; }
+	.subtitle {
+		font-style: italic;
+		margin-bottom: 1.5em;
+		margin-top: 3em; }
+	.header {
+		grid-area: header; }
+	.main {
+		grid-area: main; }
+	.build a, .copyright {
+		height: 1em; }
+	.body, .main {
+		height: 100vh; }
+	.build, .copyright {
+		justify-content: center; }
+	.download ul, .main ol {
+		list-style-type: none; }
+	.copy, .download {
+		margin: 1em auto; }
+	.copy {
+		max-width: 35em; }
+	.header {
+		overflow-y: auto; }
+	.main {
+		overflow-y: scroll; }
+	.header .copy {
+		padding: 0 1em; }
+	.download ul {
+		padding-left: 0; }
+	.build a, .copyright span {
+		padding-left: 0.2em; }
+	.subheading {
+		padding-left: 1.3em; }
+	.heading {
+		padding-top: 1em; }
+	.error-head, .error-sub, .error-txt {
+		text-align: center; }
+	.ebook {
+		width: 150px; }
+}
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+	/* Fixes IE10+ Glitches */
+	.body {
+		height: auto;
+		overflow: auto; }
+	.copyright {
+		padding-bottom: 1em; }
+}
+@media screen and (max-width: 1250px) {
+	.toc {
+		font-size: 1em; }
+}
+@media screen and (max-width: 1150px) {
+	.footer {
+		flex-direction: column-reverse; }
+	.body {
+		grid-template-columns: 1fr 2fr; }
+	.build, .copyright {
+		justify-content: center; }
+	.header {
+		overflow-x: hidden; }
+}
+@media screen and (max-width: 920px) {
+	.body {
+		display: block; }
+	.toc {
+		font-size: 1.1em; }
+	.main {
+		height: auto; }
+	.body, .main {
+		overflow: auto; }
+}
+@media screen and (max-width: 630px) {
+	.toc {
+		font-size: 1em;
+		padding-left: 3em; }
+	.toc::before {
+		height: 100%;
+		margin-left: -2em; }
+}
+@media (prefers-color-scheme: dark) {
+	.error-head, .error-sub, .error-txt, .subheading, .toc {
+		color: #dfdfdf }
+	.body, .main {
+		background-color: #222222; }
+	.toc {
+		border-color: #575757; }
+}
+@media (prefers-reduced-motion: reduce), (update: slow) {
+	*:not(.safe-animation),
+	*:not(.safe-animation)::before,
+	*:not(.safe-animation)::after {
+		animation-delay: -1ms !important;
+		animation-duration: 1ms !important;
+		animation-iteration-count: 1 !important;
+		background-attachment: initial !important;
+		scroll-behavior: auto !important;
+		transition-delay: -1ms !important;
+		transition-duration: 1ms !important;
+	}
+}
+@media print {
+	.ebook {
+		border: 1px solid #000000;
+		height: 30%;
+		width: 30%; }
+	.heading:before {
+		bottom: 2em;
+		content: "The ";
+		left: 2.1em; }
+	.build a, .download {
+		color: #000000;
+		text-decoration: none; }
+	.heading:after {
+		content: " Book";
+		right: 2.8em;
+		top: 1.2em; }
+	.copyright:before {
+		content: "\00a9";
+		padding-right: 0.2em; }
+	.build a::after {
+		content: ": " attr(href); }
+	.copyright span:before {
+		content: "2010 - "; }
+	.build, .copyright, .footer {
+		display: flex; }
+	.download {
+		display: none; }
+	.build, .copyright {
+		padding-left: 1em;
+		padding-right: 1em; }
+	.heading:after, .heading:before {
+		font-size: 0.5em;
+		position: relative; }
+	.subtitle {
+		font-style: italic; }
+	.footer {
+		justify-content: center; }
+	.build, .copy, .copyright, .download li, .heading, .subheading, .subtitle, .toc {
+		font-family: Constantia, Palatino, 'Book Antiqua', 'Palatino Linotype', serif; }
+	.toc {
+		line-height: 1.5; }
+	.subtitle {
+		margin-bottom: 2em; }
+	.build a, .copyright span {
+		padding-left: 0.2em; }
+	.header {
+		text-align: center; }
+}
