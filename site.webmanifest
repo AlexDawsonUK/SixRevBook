@@ -1,6 +1,7 @@
 {
 	"short_name": "SR Book",
 	"name": "Six Revisions Book",
+	"start_url": "https://sixrevbook.com",
 	"description": "This ebook, written by Alexander Dawson and first published on Six Revisions, is a free guide to various aspects of Web development.",
 	"icons": [
 		{
