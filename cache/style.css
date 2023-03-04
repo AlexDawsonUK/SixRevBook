@@ -40,8 +40,6 @@
 		grid-template-columns: 1fr 1fr;
 		margin: 0 auto;
 		overflow-y: hidden; }
-	.toc:last-child {
-		border-bottom-width: 0.1em; }
 	.toc {
 		border-color: #d1d0d0;
 		border-width: 0.05em 0;
@@ -57,6 +55,8 @@
 		border-style: solid; }
 	.toc:first-child {
 		border-top-width: 0.1em; }
+	.toc:last-child {
+		border-bottom-width: 0; }
 	.toc::before {
 		color: #bfbebe;
 		content: counter(li) ".";
