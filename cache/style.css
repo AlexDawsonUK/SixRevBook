@@ -154,6 +154,7 @@
 }
 @media screen and (max-width: 1150px) {
 	.footer {
+		align-items: center;
 		flex-direction: column-reverse; }
 	.body {
 		grid-template-columns: 1fr 2fr; }
