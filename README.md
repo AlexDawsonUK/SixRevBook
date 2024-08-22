@@ -52,4 +52,4 @@ This is the website of the Six Revisions book. A collection of 45 Articles for W
 
 ## Download
 
-[650 Pages (45.5MB / PDF)](https://sixrevbook.com/cache/files/ebook.pdf)
+[650 Pages (45.5MB / PDF)](https://alexdawsonuk.github.io/SixRevBook/cache/files/ebook.pdf)
