@@ -1,2 +1,2 @@
 Contact: support@hitechy.com
-Acknowledgements: https://sixrevbook.com/humans.txt
+Acknowledgements: alexdawsonuk.github.io/SixRevBook/humans.txt
