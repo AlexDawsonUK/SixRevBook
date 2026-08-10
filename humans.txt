@@ -22,4 +22,3 @@ Components:	None
 Software:	VSCode, Affinity, Kanri, iTerm, UFocus, Typeface, Squoosh, Icon Slate, Pages
 Services:	Rubik (Typeface), Icon54 Pixel (Icons), Netlify, Porkbun
 Testing:	Chrome (Mac/PC), Firefox (Mac/PC), Safari (Mac/iOS)
-Updated:	alexdawsonuk.github.io/SixRevBook/change.log
